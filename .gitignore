@@ -1,0 +1,13 @@
+# Compiled binaries
+mod_code_v1/causticfinder
+mod_code_v2/causticfinder_init
+mod_code_v2/causticfinder_cmap
+
+# Object files
+*.o
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Empty placeholder data file
+mod_code_v1/.dat

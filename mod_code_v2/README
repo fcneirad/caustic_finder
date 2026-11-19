@@ -1,0 +1,47 @@
+COMPILING
+
+The program should compile simply by typing 'make'. You need the GSL
+(GNU Scientific Library, see http://www.gnu.org/software/gsl/ ).
+
+
+NOTES
+
+* Star positions in Einstein radii x=sqrt(4GM/c^2 Dd Dds/Ds)
+* so far all stars have the same mass
+
+
+EXAMPLE
+
+After compilation, an example run (command line) would be
+
+./causticfinder stars.txt critcaust.txt 2 0.0 -0.5
+
+'stars.txt' is the file containing the stars, included in this directory
+'critcaust.txt' is the output file
+2 is the number of stars in stars.txt
+1.2 is sigmac (if zero, gamma is reduced shear)
+0.1 is gamma
+
+The output file contains 4 columns with the x and y coordinates
+of critical curves (columns 1 and 2) and caustic curves (columns
+3 and 4). Currently 200 points are calculated for each segment on the
+curves. This can be changed with the variable 'M' at the start of
+the program.
+
+[This particular critical curve & cautic pattern was discussed by
+Schramm & Kayser 1987, A&A 174, 361.
+http://adsabs.harvard.edu/abs/1987A%26A...174..361S ]
+
+
+AUTHOR
+
+Robert W. Schmidt <rschmidt@ari.uni-heidelberg.de>
+
+  Address:
+
+  Robert W. Schmidt
+  Astronomisches Rechen-Institut
+  Zentrum fuer Astronomie
+  Moenchhofstr. 12-14
+  69120 Heidelberg
+  Germany
